@@ -1,0 +1,26 @@
+{
+  "name": "ui-base",
+  "version": "0.1.0",
+  "description": "UI base",
+  "author": "halzhan <halzhan163@163.com>",
+  "homepage": "https://github.com/HalZhan/uikit-scaffold#readme",
+  "license": "MIT",
+  "main": "lib/ui-base.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HalZhan/uikit-scaffold.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/HalZhan/uikit-scaffold/issues"
+  }
+}
