@@ -1,5 +1,5 @@
 import React from 'react';
-import './button.css';
+import './index.scss';
 
 interface ButtonProps {
   /**
@@ -24,21 +24,17 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
+const PREFIX = 'ui-button';
+
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
-  label,
-  ...props
-}: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+export const Button = ({ primary = false, size = 'medium', backgroundColor, label, ...props }: ButtonProps) => {
+  const mode = `${PREFIX}-${primary ? 'primary' : 'secondary'}`;
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={[PREFIX, `${PREFIX}-${size}`, mode].join(' ')}
       style={{ backgroundColor }}
       {...props}
     >

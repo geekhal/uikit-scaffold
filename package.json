@@ -2,8 +2,10 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "start": "cd packages/ui-react && npm run storybook",
     "prettier-format": "prettier --config .prettierrc.js 'packages/**/*.{js,jsx,json,ts,tsx,css,scss,less}' --write",
-    "lint": "eslint --no-error-on-unmatched-pattern packages/**/*.{js,ts,jsx,tsx}"
+    "lint": "eslint --no-error-on-unmatched-pattern packages/**/*.{js,ts,jsx,tsx}",
+    "bootstrap": "lerna bootstrap"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.14.0",
@@ -15,6 +17,9 @@
     "husky": "^7.0.4",
     "lerna": "^4.0.0",
     "prettier": "^2.5.1"
+  },
+  "engines": {
+    "node": ">=14"
   },
   "husky": {
     "hooks": {
